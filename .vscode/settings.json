@@ -1,0 +1,23 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "npm.packageManager": "pnpm",
+  "typescript.validate.enable": true,
+  "javascript.validate.enable": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "(?:twMerge|twJoin)\\(([^\\);]*)[\\);]",
+      "[`'\"`]([^'\"`,;]*)[`'\"`]"
+    ],
+    [
+      "return \\[([\\s\\S]+?)(?=][\\n;.])",
+      "[`'\"`]([^'\"`,;]*)[`'\"`]"
+    ],
+    [
+      "(?<=\\/\\/@tw)[^\\\\]*(?=\\/\\/@tw-end)",
+      "[`'\"`]([^'\"`,;]*)[`'\"`]"
+    ]
+  ]
+}
